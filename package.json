@@ -1,5 +1,6 @@
 {
-  "name": "cra-ts",
+  "name": "imagemagick-web-wasm",
+  "author": "frizadiga@gmail.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
