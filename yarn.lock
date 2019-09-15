@@ -2766,6 +2766,11 @@ css-declaration-sorter@^4.0.1:
     postcss "^7.0.1"
     timsort "^0.3.0"
 
+css-element-queries@^1.0.2:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/css-element-queries/-/css-element-queries-1.2.1.tgz#70d1a0f676fc0bd0a3306522a5b2d3bcc55c9fe6"
+  integrity sha512-hiI1tSzf+U/gE13qhfwnCvN90Ay0THnE+mT3pjN/c/mvFmEUHZVNrvMJrrkw2ppOzkl69FdgH2ZGZENYQUaN2A==
+
 css-has-pseudo@^0.10.0:
   version "0.10.0"
   resolved "https://registry.yarnpkg.com/css-has-pseudo/-/css-has-pseudo-0.10.0.tgz#3c642ab34ca242c59c41a125df9105841f6966ee"
@@ -3937,6 +3942,11 @@ file-loader@3.0.1:
   dependencies:
     loader-utils "^1.0.2"
     schema-utils "^1.0.0"
+
+file-saver@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/file-saver/-/file-saver-2.0.2.tgz#06d6e728a9ea2df2cce2f8d9e84dfcdc338ec17a"
+  integrity sha512-Wz3c3XQ5xroCxd1G8b7yL0Ehkf0TC9oYC6buPFkNnU9EnaPlifeAFCyCh+iewXTyFRcg0a6j3J7FmJsIhlhBdw==
 
 filesize@3.6.1:
   version "3.6.1"
@@ -7877,6 +7887,14 @@ react-app-polyfill@^1.0.2:
     raf "3.4.1"
     regenerator-runtime "0.13.3"
     whatwg-fetch "3.0.0"
+
+react-compare-image@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/react-compare-image/-/react-compare-image-1.4.1.tgz#d4ab6f745b98d57f41907d763481b59a24a104cd"
+  integrity sha512-LrYNyhetRwMWFuzBCnrsSOjZSVvkGnMkMoZwJIsnn83NdXvLfHxq1QHCp3DxoYIfCTYIM6/LSST9lUKS2ln1mw==
+  dependencies:
+    css-element-queries "^1.0.2"
+    prop-types "^15.7.2"
 
 react-dev-utils@^9.0.3:
   version "9.0.3"

@@ -37,3 +37,9 @@
   display: grid;
   grid: auto / 1fr 1fr;
 }
+
+#input-cli {
+  background: black;
+  border: none;
+  color: white;
+}
