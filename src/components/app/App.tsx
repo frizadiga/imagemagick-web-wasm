@@ -136,21 +136,32 @@ const App: React.FC = () => {
 
   return (
     <div className="app">
-      {
-        true && 
-        <div className="image-container" style={{ display: 'none' }}>
-          <div>
-            <p>Source</p>
-            <img id="srcImage1" src={fileNames[0]} />
-          </div>
-          <div>
-            <p>Result</p>
-            <img id="outputImage" onClick={handleSaveAs} />
-          </div>
+      <div className="image-container" style={{ display: 'none' }}>
+        <div>
+          <p>Source</p>
+          <img id="srcImage1" src={fileNames[0]} />
         </div>
-      }
+        <div>
+          <p>Result</p>
+          <img id="outputImage" onClick={handleSaveAs} />
+        </div>
+      </div>
 
       <ReactCompareImage leftImage={fileNames[0]} rightImage={outputBlobUrl} />
+
+      <div>
+        <p>Select effect</p>
+        <select id="select-effect" onChange={handleSelectCommand}>
+          {
+            Object.keys(commandList).map(key => {
+              const item = commandList[key];
+              return (
+              <option value={item.name} key={item.name}>{item.name}</option>
+              )
+            })
+          }
+        </select>
+      </div>
 
       <p>
         { outputBlob &&
@@ -158,17 +169,6 @@ const App: React.FC = () => {
         }
       </p>
 
-      <p>Select effect</p>
-      <select onChange={handleSelectCommand}>
-        {
-          Object.keys(commandList).map(key => {
-            const item = commandList[key];
-            return (
-            <option value={item.name} key={item.name}>{item.name}</option>
-            )
-          })
-        }
-      </select>
 
       { selectedCommand &&
         <div>
@@ -183,7 +183,7 @@ const App: React.FC = () => {
         </div>
       }
       <p>
-        <Button onClick={handleProcessImage}>Process Image</Button>
+        <Button id="apply-button" onClick={handleProcessImage}>Apply</Button>
       </p>
     </div>
   );

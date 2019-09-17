@@ -43,3 +43,18 @@
   border: none;
   color: white;
 }
+
+#select-effect {
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid #333;
+  background-color: transparent;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  background-color: white;
+}
+
+#apply-button {
+  font-weight: bold;
+}
