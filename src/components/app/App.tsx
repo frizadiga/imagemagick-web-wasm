@@ -10,22 +10,22 @@ const Magick = { Call };
 const fileNames: string[] = ['bliss.png', 'tokopedia.png'];
 
 const commandList = {
-  rotate: {
-    name: 'Rotate',
-    cli: [
-      'convert',
-      '-rotate',
-      '90',
-      fileNames[0],
-      'output.png'
-    ], 
-  },
   blur: {
     name: 'Blur',
     cli: [
       'convert',
       '-blur',
       '0x3',
+      fileNames[0],
+      'output.png'
+    ], 
+  },
+  rotate: {
+    name: 'Rotate',
+    cli: [
+      'convert',
+      '-rotate',
+      '90',
       fileNames[0],
       'output.png'
     ], 
@@ -65,6 +65,44 @@ const commandList = {
       "black",
       "-vignette",
       "100x300",
+      "bliss.png","output.png"
+    ], 
+  },
+  emboss: {
+    name: 'Emboss',
+    cli: [
+      "convert",
+      "-emboss",
+      "20",
+      "bliss.png","output.png"
+    ], 
+  },
+  shade: {
+    name: 'Shade',
+    cli: [
+      "convert",
+      "-shade",
+      "100x450",
+      "bliss.png","output.png"
+    ], 
+  },
+  border: {
+    name: 'Border',
+    cli: [
+      "convert",
+      "-bordercolor",
+      "yellow",
+      "-border",
+      "20",
+      "bliss.png","output.png"
+    ], 
+  },
+  paint: {
+    name: 'Paint',
+    cli: [
+      "convert",
+      "-paint",
+      "10",
       "bliss.png","output.png"
     ], 
   },
